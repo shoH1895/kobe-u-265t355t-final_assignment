@@ -1,0 +1,11 @@
+﻿name,category,price,energy,protein,fat,carbohydrate,salt,calcium,vegetable,iron,is_recommended,detail_url,updated_at,season
+ライス（ミニ）,主食,99,156,2.5,0.3,37.1,0.0,3,0,0.1,False,https://gakushoku.coop/items/610004,2026-08-04,all
+ライス（小）,主食,143,250,4.0,0.5,59.4,0.0,5,0,0.2,False,https://gakushoku.coop/items/610003,2026-08-04,all
+ライス（中）,主食,187,343,5.5,0.7,81.6,0.0,7,0,0.2,False,https://gakushoku.coop/items/610002,2026-08-04,all
+ライス（大）,主食,231,437,7.0,0.8,103.9,0.0,8,0,0.3,False,https://gakushoku.coop/items/610001,2026-08-04,all
+味噌汁,汁物,44,24,1.6,0.8,3.0,1.7,14,0,0.2,False,https://gakushoku.coop/items/614010,2026-08-04,all
+かけうどん,麺類,308,346,8.8,2.0,73.4,4.2,21,5,0.7,False,https://comenu.jp/tokyo-univ/390144/menu/617065,2026-08-04,all
+かけそば,麺類,308,321,14.0,2.4,60.9,3.8,26,5,2.0,False,https://comenu.jp/tokyo-univ/390144/menu/617066,2026-08-04,all
+温玉ぶっかけうどん,麺類,473,536,16.5,17.4,79.7,3.8,58,5,1.9,False,https://comenu.jp/tokyo-univ/390166/menu/617001,2026-08-04,all
+冷やしうどん,麺類,352,345,9.6,2.1,72.2,3.9,28,5,0.9,False,https://comenu.jp/tokyo-univ/390144/menu/617101,2026-08-04,summer
+冷やしそば,麺類,352,320,14.8,2.5,59.7,3.5,33,5,2.2,False,https://comenu.jp/tokyo-univ/390144/menu/617102,2026-08-04,summer

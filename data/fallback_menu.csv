@@ -1,0 +1,5 @@
+name,category,price,energy,protein,fat,carbohydrate,salt,calcium,vegetable,iron,is_recommended,detail_url,updated_at
+豚肉の生姜焼き,主菜,341,246,20.0,14.8,10.8,1.6,28,80,0.9,True,https://west2-univ.jp/sp/detail.php?c=611021&t=677156,2026-08-04
+胡麻チゲ冷麺,麺類,594,649,30.3,24.2,78.5,6.6,100,21,2.6,True,https://west2-univ.jp/sp/detail.php?c=617153&t=677156,2026-08-04
+（中）チキン竜田丼,丼・カレー,583,764,23.5,27.6,108.9,3.4,22,0,0.9,True,https://west2-univ.jp/sp/detail.php?c=616002&t=677156,2026-08-04
+蒸し鶏オクラ和風和え,副菜,99,31,4.6,0.3,3.2,0.8,31,33,0.2,True,https://west2-univ.jp/sp/detail.php?c=612063&t=677156,2026-08-04
