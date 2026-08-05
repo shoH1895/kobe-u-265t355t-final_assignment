@@ -28,7 +28,7 @@ jobs:
         run: uv sync --dev
 
       - name: Type check
-        run: uv run mypy src/
+        run: uv run mypy --python-version 3.12 src/
 
       - name: Run tests
         run: uv run pytest -q
