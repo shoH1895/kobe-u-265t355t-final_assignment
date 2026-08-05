@@ -1,0 +1,43 @@
+[project]
+name = "cafeteria-nutrition-app"
+version = "0.1.0"
+description = "神戸大学生協LANS BOX食堂のメニューを用いた昼食・夕食提案アプリ"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4",
+    "matplotlib",
+    "pandas",
+    "playwright",
+    "requests",
+    "streamlit",
+]
+
+[project.scripts]
+cafeteria-app = "cafeteria_app.launcher:main"
+
+[dependency-groups]
+dev = [
+    "mypy",
+    "pandas-stubs",
+    "pytest",
+    "types-requests",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cafeteria_app"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.mypy]
+python_version = "3.11"
+packages = ["cafeteria_app"]
+ignore_missing_imports = true
+check_untyped_defs = true
+warn_unused_ignores = true
