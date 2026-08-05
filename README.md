@@ -1,6 +1,6 @@
 # 学食メニュー栄養管理・食事提案アプリ
 
-[![CI](https://github.com/USER_NAME/REPOSITORY_NAME/actions/workflows/ci.yml/badge.svg)](https://github.com/USER_NAME/REPOSITORY_NAME/actions/workflows/ci.yml)
+[![CI](https://github.com/shoH1895/kobe-u-265t355t-final_assignment/actions/workflows/ci.yml/badge.svg)](https://github.com/USER_NAME/REPOSITORY_NAME/actions/workflows/ci.yml)
 
 ## 目的
 
