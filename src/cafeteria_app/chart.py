@@ -23,6 +23,27 @@ def get_japanese_font() -> FontProperties:
     CodespacesではNoto Sans CJK JPなどを探す。見つからない場合は
     Matplotlibの既定フォントを返す。
     """
+    # japanize-matplotlib に同梱された IPAexGothic を最優先で使う。
+    # CodespacesやStreamlit CloudでもOSのフォント設定に依存しない。
+    try:
+        import japanize_matplotlib
+
+        japanize_matplotlib.japanize()
+        package_dir = Path(japanize_matplotlib.__file__).resolve().parent
+        bundled_font = package_dir / "fonts" / "ipaexg.ttf"
+
+        if bundled_font.exists():
+            font_manager.fontManager.addfont(str(bundled_font))
+            return FontProperties(fname=str(bundled_font))
+
+        font_path = font_manager.findfont(
+            FontProperties(family="IPAexGothic"),
+            fallback_to_default=False,
+        )
+        return FontProperties(fname=font_path)
+    except (ImportError, OSError, RuntimeError, ValueError):
+        pass
+
     windows_dir = Path(os.environ.get("WINDIR", r"C:\Windows"))
     font_files = [
         windows_dir / "Fonts" / "meiryo.ttc",
