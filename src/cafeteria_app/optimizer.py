@@ -165,7 +165,7 @@ def compare_lunch_price_ranges(
 
     ans: list[PriceComparisonResult] = []
     for limit in price_limits:
-        result = search_best_lunch(
+        candidates = search_best_lunch(
             menu_data=menu_data,
             recommended_name=recommended_name,
             price_min=price_min,
@@ -173,10 +173,10 @@ def compare_lunch_price_ranges(
             target=target,
             top_n=1,
         )
-        if not result:
+        if not candidates:
             continue
-
-        best = result[0]
+        
+        best = candidates[0]
         price = float(best["total"]["price"])
         ans.append(
             {
@@ -193,12 +193,14 @@ def compare_lunch_price_ranges(
         return ans
 
     base_score = float(ans[0]["score"])
-    for result in ans:
+    for comparison in ans:
         if base_score <= 1e-12:
-            result["improvement_rate"] = 0.0
+            comparison["improvement_rate"] = 0.0
         else:
-            result["improvement_rate"] = float(
-                100 * (base_score - float(result["score"])) / base_score
+            comparison["improvement_rate"] = float(
+                100
+                * (base_score - float(comparison["score"]))
+                / base_score
             )
 
     return ans
